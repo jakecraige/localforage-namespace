@@ -1,4 +1,4 @@
-# Localforage Namespace
+# Localforage Namespace (0.0.11)
 
 A simple wrapper around Mozilla's localforage that adds namespacing.
 

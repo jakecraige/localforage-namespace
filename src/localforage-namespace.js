@@ -34,10 +34,11 @@
       },
       _delegateMethod: function(method, callback) {
         var that = this;
-        var args = [].slice.call(arguments);
+        var args = [].slice.call(arguments, 2);
         return new Promise(function(resolve, reject) {
           if (callback) {
-            localforage[method].apply(null, args.slice(2));
+            args.push(callback)
+            localforage[method].apply(null, args);
           } else {
             localforage[method].apply(null, args.slice(2)).then(resolve);
           }

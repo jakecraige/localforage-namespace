@@ -1,6 +1,6 @@
 {
   "name": "localforage-namespace",
-  "version": "0.0.1",
+  "version": "0.0.11",
   "homepage": "https://github.com/jakecraige/localforage-namespace",
   "description": "localforage wrapper to support namespacing",
   "main": "dist/localforage-namespace.js",
